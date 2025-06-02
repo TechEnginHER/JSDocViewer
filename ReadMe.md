@@ -20,34 +20,27 @@
 ---
 
 ## 📦 Installation
-    ```bash 
     git clone https://github.com/TechEnginHER/JSDocViewer.git
-    cd devdocs-navigator
+    cd JSDocViewer
     npm install
-    ```
-
 ---
 
 ## 🛠 Usage
-🔹 Generate Markdown Only
+🔹 Generate Markdown Only: 
 Extracts JSDoc comments from a JavaScript file or folder and saves them as Markdown in /output/docs.md.
 
-    ```bash
-        node cli.js --file example/sample.js
-    ```
-
-🔹 Generate & Preview in Browser
+    node cli.js --file example/sample.js
+ 
+🔹 Generate & Preview in Browser: 
 Launches a local Express server and renders your Markdown documentation at http://localhost:3000.
-
-    ```bash
+   
     node cli.js --file example/sample.js --serve
-    ```
 
 ---
 
 ## 📁 File Structure
 
-        devdocs-navigator/
+        JSDocViewer/
         ├── cli.js                # CLI entry point
         ├── parser.js             # Extract JSDoc from files
         ├── markdownGenerator.js  # Converts parsed JSDoc to Markdown
@@ -74,7 +67,7 @@ Highlight.js (Syntax highlighting)
 ---
 
 ## ⭐️ Contribute
-Ideas, issues or pull requests? You’re welcome. 
+Ideas, issues or pull requests
 
 ---
 
