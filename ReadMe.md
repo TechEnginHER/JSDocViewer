@@ -1,6 +1,6 @@
 # 🧭 JSDocView
 
-**A lightweight Node.js CLI tool turns your JSDoc comments into clean readable Markdown documentation and also lets you  preview it in your browser.**
+**A lightweight Node.js CLI tool turns your JSDoc comments into clean readable Markdown documentation and lets you  preview it in your browser.**
 
 **It extracts JSDoc comments directly from your source files and converts them into well-structured Markdown documentation**
 
@@ -26,13 +26,15 @@
 ---
 
 ## 🛠 Usage
-🔹 Generate Markdown Only: 
-Extracts JSDoc comments from a JavaScript file or folder and saves them as Markdown in /output/docs.md.
+🧾 Option 1: Generate Markdown documentation
+
+Extract JSDoc comments from a JavaScript file or folder and save the result as `docs.md` inside the /output folder.
 
     node cli.js --file example/sample.js
  
-🔹 Generate & Preview in Browser: 
-Launches a local Express server and renders your Markdown documentation at http://localhost:3000.
+🌐 Option 2: Generate & Preview in the browser
+
+Run the tool with the `--serve` flag to launch a local Express server. It renders the generated Markdown in a browser-friendly format at: `http://localhost:3000`
    
     node cli.js --file example/sample.js --serve
 
